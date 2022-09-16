@@ -10,7 +10,7 @@ import plotly.express as px
 #players = Image.open('images/players.jpg')
 
 # Read csv file with players data
-df = pd.read_csv("data.csv")
+df = pd.read_csv("./data.csv")
 
 # Group by player and get average scores
 df_grouped = df.groupby("Player").mean().reset_index()
